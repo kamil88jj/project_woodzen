@@ -14,8 +14,13 @@
             font-weight: 400;
             font-size: 20px;
             color: $Brown-color;
+            font-family: 'Inter';
+            font-style: normal;
             text-decoration: none;
             border: none;
+            &:focus {
+                outline: none;
+            }
             &:after {
                 content: '';
                 position: absolute;
@@ -66,3 +71,4 @@
         cursor: pointer;
     }
 }
+
