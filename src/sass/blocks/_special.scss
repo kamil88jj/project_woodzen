@@ -1,0 +1,31 @@
+*.special {
+    padding: 50px  0 0 0;
+    min-height: 526px;
+    &__frame {
+        display: block;
+        margin: 0 auto;
+        width: 1200px;
+        height: 526px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        color: $Brown-color;
+        padding: 26px 0 0 52px
+    }
+    &__vector {
+        display: block;
+        padding-top: 15px;
+    }
+    &__wrap {
+        display: grid;
+        padding-top: 20px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 250px);
+        column-gap: 100px;
+    }
+}
