@@ -13,6 +13,7 @@
         font-size: 20px;
         background-color: $Cream-color;
         border-radius: 100%;
+        transition: all 1.5s;
         border:none;
         a {
             position: absolute;
@@ -25,8 +26,9 @@
         }
         &:hover {
             box-shadow: 1px 1px 30px 25px rgba(233, 204, 204, 0.33);
+            background-color: #f6f7e6a8;
             text-decoration: none;
-            transition: all 0.5s;
+            transition: all .5s;
             border: none;
         }
         &:focus {

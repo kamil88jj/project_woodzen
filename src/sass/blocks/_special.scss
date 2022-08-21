@@ -1,31 +1,83 @@
-*.special {
-    padding: 50px  0 0 0;
-    min-height: 526px;
+.special{
+    width: 1300px;
+    height: 530px;
+    margin: 0 auto;
     &__frame {
-        display: block;
-        margin: 0 auto;
-        width: 1200px;
-        height: 526px;
-        background: #FFFFFF;
+        width: 1300px;
+        height: 530px;
+        
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     }
+    &__wrap {
+        padding: 0 30px;
+        margin-top: 130px;
+        img {
+            display: block;
+            height: 150px;
+            width: 100px;
+        }
+    }
     &__title {
+        display: block;
+        padding: 26px 0 0 56px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 36px;
         color: $Brown-color;
-        padding: 26px 0 0 52px
     }
     &__vector {
+        position: absolute;
+        transform: translateX(-100%);
+        padding-top: 70px;
+    }
+}
+
+
+
+
+//СТИЛИЗАЦИЯ ДЕФОЛТНЫХ ЗНАЧЕНИЙ С БИБЛИОТЕКИ 
+.owl-carousel .owl-item img {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+}
+.owl-nav span {
+    display: none;
+}
+.owl-prev {
+    &:after {
+        content: '';
+        position: absolute;
+        top: -33px;
+        left: -40px;
+        z-index: 2;
+        width: 10%;
+        height: 100%;
+        background: url(../../icons/emblem/arrowL.svg) center no-repeat;
+    }
+}
+.owl-next {
+    &:after {
+        content: '';
+        position: absolute;
+        top: -33px;
+        right: -40px;
+        z-index: 2;
+        width: 10%;
+        height: 100%;
+        background: url(../../icons/emblem/arrowR.svg) center no-repeat;
+    }
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
         display: block;
-        padding-top: 15px;
-    }
-    &__wrap {
-        display: grid;
-        padding-top: 20px;
-        justify-content: center;
-        grid-template-columns: repeat(3, 250px);
-        column-gap: 100px;
-    }
+        width: 25px;
+        height: 25px;
+        z-index: 3;
+        background: #D8C686;
 }
