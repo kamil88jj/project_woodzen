@@ -66,6 +66,7 @@
         display: grid;
         position: relative;
         margin: 0 auto;
+        margin-top: 10px;
         grid-template-columns: repeat(4, 225px);
         justify-content: center;
         column-gap: 60px;
@@ -81,12 +82,13 @@
         width: 263px;
         height: 256px;
         background: $Cream-color;
+        transition: all 0.7s;
         border-radius: 100%;
         &:hover {
             box-shadow: 1px 1px 30px 25px rgba(233, 204, 204, 0.33);
             background-color: #f6f7e6a8;
             text-decoration: none;
-            transition: all .5s;
+            transition: all .3s;
             border: none;
         }
         a {

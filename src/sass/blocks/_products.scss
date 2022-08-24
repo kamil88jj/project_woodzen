@@ -50,9 +50,10 @@
     }
     &__block {
         cursor: pointer;
+        transition: all .8s;
         border-radius: 100%;
         &:hover {
-            transition: all .4s;
+            transition: all .2s;
             box-shadow: 1px 1px 20px 2px rgba(66, 60, 60, 0.25);
         }
         a {

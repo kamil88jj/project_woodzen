@@ -12,7 +12,9 @@
     max-width: 950px;
     margin: 0 auto;
 }
-
+body {
+    overflow-x:hidden;  /*для горизонтального*/
+}
 
 @import 'base/variables';
 @import 'blocks/animate';
@@ -21,3 +23,4 @@
 @import 'blocks/products';
 @import 'blocks/special';
 @import 'blocks/news';
+@import 'blocks/footer';
