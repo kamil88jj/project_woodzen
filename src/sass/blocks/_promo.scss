@@ -40,22 +40,22 @@
                 }
         }
     }
-    &__home {
+    #home {
         grid-column: 5/6;
     }
-    &__catalog {
+    #catalog {
         grid-column: 6/7;
     }
-    &__delivery {
+    #delivery {
         grid-column: 7/8;
     }
-    &__contacts {
+    #contacts {
         grid-column: 8/9;
     }
-    &__cart {
+    #cart {
         grid-column: 9/10;
     }
-    &__price {
+    #price {
         grid-column: 10/11;
     }
     &__search {
