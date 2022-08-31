@@ -1,0 +1,177 @@
+.catalog {
+    padding: 110px 0 ;
+    min-height: 900px; 
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 225px);
+        grid-template-rows: repeat(3,225px);
+        column-gap: 133px;
+        row-gap: 300px;
+    }
+    &__block {
+        width: 225px;
+        height: 225px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 300px;
+    }
+    &__presentation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        width: 225px;
+        height: 225px;
+        left: 273px;
+        top: 969px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 100%;
+    }
+    &__subtitle {
+        position: relative;
+        font-family: 'Inter';
+        font-style: normal;
+        margin-top: 30px;
+        width: 300px;
+        font-weight: 600;
+        transform: translateX(-30px);
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #8D5F3E;
+    }
+    &__links {
+        position: absolute;
+        width: 230px;
+        margin-top: 20px;
+        a {
+            font-family: 'Inter';
+            font-style: normal;
+            padding: 0 5px;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 40px;
+            text-decoration-line: underline;
+            color: #D0B580;
+        }
+    }
+    .table {
+        &:after {
+            content:'';
+            position: absolute;
+            width: 95px;
+            height: 96px;
+            right: 180px;
+            transform: translateY(-20px);
+            z-index: -1;
+            border-radius: 100%;
+            background: $Gray-color;
+        }
+    }
+    .slabs {
+        &:after {
+            content:'';
+            position: absolute;
+            width: 95px;
+            height: 96px;
+            right: 180px;
+            transform: translateY(-20px);
+            z-index: -1;
+            border-radius: 100%;
+            background: $Gray-color;
+        }
+    }
+    .ladder {
+        &:after {
+            content:'';
+            position: absolute;
+            width: 95px;
+            height: 96px;
+            right: 170px;
+            transform: translateY(-20px);
+            z-index: -1;
+            border-radius: 100%;
+            background: $Gray-color;
+        }
+    }
+    .cuttingBoard {
+        &:after {
+            content:'';
+            position: absolute;
+            width: 95px;
+            height: 96px;
+            right: 215px;
+            transform: translateY(-30px);
+            z-index: -1;
+            border-radius: 100%;
+            background: $Gray-color;
+        }
+    }
+    .doors {
+        &:after {
+            content:'';
+            position: absolute;
+            width: 95px;
+            height: 96px;
+            right: 150px;
+            transform: translateY(-30px);
+            z-index: -1;
+            border-radius: 100%;
+            background: $Gray-color;
+        }
+    }
+    .windowSills {
+        &:after {
+            content:'';
+            position: absolute;
+            width: 95px;
+            height: 96px;
+            right: 180px;
+            transform: translateY(-30px);
+            z-index: -1;
+            border-radius: 100%;
+            background: $Gray-color;
+        }
+    }
+    .furniture {
+        &:after {
+            content:'';
+            position: absolute;
+            width: 95px;
+            height: 96px;
+            right: 210px;
+            transform: translateY(-55px);
+            z-index: -1;
+            border-radius: 100%;
+            background: $Gray-color;
+        }
+    }
+    .stool {
+        &:after {
+            content:'';
+            position: absolute;
+            width: 95px;
+            height: 96px;
+            right: 190px;
+            transform: translateY(-55px);
+            z-index: -1;
+            border-radius: 100%;
+            background: $Gray-color;
+        }
+    }
+    .souvenir {
+        &:after {
+            content:'';
+            position: absolute;
+            width: 95px;
+            height: 96px;
+            right: 230px;
+            transform: translateY(-55px);
+            z-index: -1;
+            border-radius: 100%;
+            background: $Gray-color;
+        }
+    }
+}

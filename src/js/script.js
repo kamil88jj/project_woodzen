@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         items: 4,
@@ -8,9 +7,7 @@ $(document).ready(function(){
     });
 
 
-
     //SCROLL
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1800) {
             $('.arrowUp').fadeIn();
