@@ -12,8 +12,14 @@
     max-width: 950px;
     margin: 0 auto;
 }
+
+.active {
+    display: block;
+}
+
+
 body {
-    overflow-x:hidden;  /*для горизонтального скролла*/
+    overflow-x:hidden;  /*for horizontal scrolling*/
 }
 
 
@@ -29,4 +35,5 @@ body {
 @import 'blocks/catalog';
 @import 'blocks/delivery';
 @import 'blocks/contacts';
+@import 'blocks/subfields';
 @import 'blocks/footer';
