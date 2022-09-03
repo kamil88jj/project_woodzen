@@ -1,49 +1,49 @@
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items: 4,
-        nav: true,
-        loop: true,
-        dotsEach: 3,
-    });
+window.addEventListener('DOMContentLoaded', function() {
+    'use strict';
 
+    let link = document.querySelectorAll('.promo__link'),
+        wrap = document.querySelector('.promo__wrapper'),
+        content = document.querySelectorAll('.content');
 
-    //SCROLL
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1800) {
-            $('.arrowUp').fadeIn();
-        } else {
-            $('.arrowUp').fadeOut();
+        function hideContent(a) {
+            for (let i = a; i < content.length; i++) {
+                content[i].classList.remove('show');
+                content[i].classList.add('hide');
+            }
         }
-    });
-    
-    //Arrow Up
-    $("a[href^='#up']").click(function() {
-    
-        const _href = $(this).attr("href");
-    
-            $('html, body').animate({
-            scrollTop: $(_href).offset().top+"px"});
-            return false;
-        });
+
+        hideContent(1);
+
+        function showContent(b) {
+            if(content[b].classList.contains('hide')) {
+                content[b].classList.remove('hide');
+                content[b].classList.add('show');
+            }
+        }
 
 
-    //adding prices
-    $('.minus').click(function () {
-        var $input = $(this).parent().find('input');
-        var count = parseInt($input.val()) - 1;
-        count = count < 1 ? 1 : count;
-        $input.val(count);
-        $input.change();
-        return false;
-    });
-    $('.plus').click(function () {
-        var $input = $(this).parent().find('input');
-        $input.val(parseInt($input.val()) + 1);
-        $input.change();
-        return false;
-    });
-    
+        wrap.addEventListener('click', function(event) {
+            let targetTab = event.target;
+            if (targetTab && targetTab.classList.contains('promo__link')) {
+                for (let i = 0; i < link.length; i++) {
+                    if (targetTab == link[i]) {
+                        hideContent(0);
+                        showContent(i);
+                        break;
+                    }
+                }
+            }
+        })
 });
+
+
+
+
+
+
+
+//JQUERY
+
 
 
 

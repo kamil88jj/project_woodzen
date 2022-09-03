@@ -13,8 +13,13 @@
     margin: 0 auto;
 }
 
-.active {
+.show {
     display: block;
+    transition: 0.5 all;
+}
+
+.hide {
+    display: none;
 }
 
 
@@ -35,5 +40,6 @@ body {
 @import 'blocks/catalog';
 @import 'blocks/delivery';
 @import 'blocks/contacts';
-@import 'blocks/subfields';
+@import 'blocks/basket';
+@import 'blocks/logs';
 @import 'blocks/footer';
