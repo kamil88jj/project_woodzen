@@ -1,0 +1,100 @@
+.wrapper {
+    margin: 0 auto;
+    min-height: 400px;
+    width: 1139px;
+    padding: 130px 0;
+}
+.name {
+    &__title {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(50px, 120px));
+        justify-content: center;
+        justify-items: center;
+        column-gap: 100px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 49px;
+        color: #8D5F3E;
+    }
+}
+.divider {
+    width: 1139px;
+    border: 1px solid #868FA0;
+}
+.total {
+    &__subtitle {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(50px, 120px));
+        justify-content: center;
+        justify-items: center;
+        column-gap: 100px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        margin: 29px 0;
+        color: #868FA0;
+    }
+}
+
+.result {
+    display: flex;
+    justify-content: end;
+    &__name {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        margin: 101px 10px 0 0;
+        text-align: center;
+        color: #8D5F3E;
+    }
+    &__total {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        margin-top: 101px;
+        color: #868FA0;
+    }
+    &__btn {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background: #F6F7E6;
+        border-radius: 100%;
+        border: none;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        margin: 44px 0 0 108px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        transition: all .5s;
+        line-height: 24px;
+        color: #868FA0;
+        &:hover {
+            box-shadow: 1px 1px 20px 5px rgba(237, 214, 214, 0.33);
+            text-decoration: none;
+            transition: all .3s;
+            border: none;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 28px;
+            top: 63%;
+            width: 106px;
+            height: 0px;
+            border: 1px solid #868FA0;
+        }
+    }
+}

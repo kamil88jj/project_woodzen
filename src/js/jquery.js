@@ -28,41 +28,20 @@ $(document).ready(function(){
 
 
     //adding prices
-    $('.minus').click(function () {
-        var $input = $(this).parent().find('input');
-        var count = parseInt($input.val()) - 1;
-        count = count < 1 ? 1 : count;
-        $input.val(count);
-        $input.change();
-        return false;
-    });
-    $('.plus').click(function () {
-        var $input = $(this).parent().find('input');
-        $input.val(parseInt($input.val()) + 1);
-        $input.change();
-        return false;
-    });
+    // $('.minus').click(function () {
+    //     var $input = $(this).parent().find('input');
+    //     var count = parseInt($input.val()) - 1;
+    //     count = count < 1 ? 1 : count;
+    //     $input.val(count);
+    //     $input.change();
+    //     return false;
+    // });
+    // $('.plus').click(function () {
+    //     var $input = $(this).parent().find('input');
+    //     $input.val(parseInt($input.val()) + 1);
+    //     $input.change();
+    //     return false;
+    // });
 
-    
-    //basket
-        $('.smart-basket__wrapper').smbasket({
-            productElement: 'клас обвертки карточки товара',
-            buttonAddToBasket: 'клас кнопки купить',
-            productPrice: 'product__price-number',
-            productSize: 'product__size-element',
-            
-            productQuantityWrapper: 'product__quantity',
-            smartBasketMinArea: 'класс корзины',
-            countryCode: '+7',
-            smartBasketCurrency: '₽',
-            smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
-
-            agreement: {
-                isRequired: true,
-                isChecked: true,
-                isLink: 'https://artstranger.ru/privacy.html',
-            },
-            nameIsRequired: false,
-        });
 
 });
