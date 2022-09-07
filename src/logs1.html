@@ -43,16 +43,16 @@
                     <button class="logs__btn"><img src="icons/emblem/plus.svg" alt="plus"></button>
                     <div class="logs__price">15 000 руб</div>
                 </div>
-                <div class="logs__blocks">
+                <div class="logs__blocks" data-id="subfields02">
                     <img src="img/slices/slices2.png" alt="slice">
                     <div class="logs__subtitle">Карагач слэбы</div>
                     <button class="logs__btn btnActive"><img src="icons/emblem/plus.svg" alt="plus"></button>
                     <div class="logs__price">15 000 руб</div>
                         <div class="logs__number">
                             <span class="logs__minus minus"><img src="icons/emblem/inputMinus.svg" alt="minus"></span>
-                            <div class="logs__input">1</div>
+                            <div data-counter class="logs__input">1</div>
                             <span class="logs__plus plus"><img src="icons/emblem/inputPlus.svg" alt="plus"></span>
-                            <button class="logs__btnBasket">В корзину</button>
+                            <button data-cart type="button" class="logs__btnBasket">В корзину</button>
                         </div>
                 </div>
                 <div class="logs__blocks">
@@ -103,8 +103,8 @@
 
         <script src="js/jquery.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
-        <script src="js/counter01.js"></script>
         <script src="js/counter02.js"></script>
+        <script src="js/cart-01.js"></script>
         <script src="js/script.js"></script>
         <script src="js/jquery.js"></script>
 </body>
