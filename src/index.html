@@ -196,55 +196,55 @@
                             <div class="catalog__presentation"><img src="img/products/table.svg" alt="presentation"></img></div>
                             <div class="catalog__subtitle table"><span>Cтолешницы</span></div>
                             <div class="catalog__links">
-                                <a href="logs1.html">Подстолья</a> <br>
-                                <a href="logs2.html">Из цельного слэба</a> <br>
-                                <a href="logs3.html">Склеиные из слэбов</a> <br>
-                                <a href="logs4.html">Цельноламельные</a>
+                                <a class="catalog__link" href="logs1.html">Подстолья</a> <br>
+                                <a class="catalog__link" href="logs2.html">Из цельного слэба</a> <br>
+                                <a class="catalog__link" href="logs3.html">Склеиные из слэбов</a> <br>
+                                <a class="catalog__link" href="logs4.html">Цельноламельные</a>
                             </div>
                         </div>
                         <div class="catalog__block">
                             <div class="catalog__presentation"><img src="img/products/furniture.svg" alt="presentation"></img></div>
                             <div class="catalog__subtitle furniture"><span>Мебель из массива<br>на заказ</span></div>
                             <div class="catalog__links">
-                                <a href="logs5.html">Дуб</a>
-                                <a href="logs6.html">Ясень</a>
-                                <a href="logs7.html">Тополь</a>
-                                <a href="logs8.html">Вяз</a>
-                                <a href="logs9.html">Альха</a>
-                                <a href="logs10.html">Корни</a>
-                                <a href="logs11.html">Лиственница</a>
+                                <a class="catalog__link" href="logs5.html">Дуб</a>
+                                <a class="catalog__link" href="logs6.html">Ясень</a>
+                                <a class="catalog__link" href="logs7.html">Тополь</a>
+                                <a class="catalog__link" href="logs8.html">Вяз</a>
+                                <a class="catalog__link" href="logs9.html">Альха</a>
+                                <a class="catalog__link" href="logs10.html">Корни</a>
+                                <a class="catalog__link" href="logs11.html">Лиственница</a>
                             </div>
                         </div>
                         <div class="catalog__block">
                             <div class="catalog__presentation"><img src="img/products/windowSills.svg" alt="presentation"></img></div>
                             <div class="catalog__subtitle windowSills"><span>Подоконники</span></div>
                             <div class="catalog__links">
-                                <a href="logs12.html">Из слэба</a> <br>
-                                <a href="logs13.html">Цельноламельные</a> <br>
-                                <a href="logs14.html">Из нескольких слэбов</a>
+                                <a class="catalog__link" href="logs12.html">Из слэба</a> <br>
+                                <a class="catalog__link" href="logs13.html">Цельноламельные</a> <br>
+                                <a class="catalog__link" href="logs14.html">Из нескольких слэбов</a>
                             </div>
                         </div>
                         <div class="catalog__block">
                             <div class="catalog__presentation"><img src="img/products/slabs.svg" alt="presentation"></img></div>
                             <div class="catalog__subtitle slabs"><span>Слэбы и срезы</span></div>
                             <div class="catalog__links">
-                                <a href="logs15.html">Откалиброванные</a> <br>
-                                <a href="logs16.html">Не откалиброванные</a> <br>
+                                <a class="catalog__link" href="logs15.html">Откалиброванные</a> <br>
+                                <a class="catalog__link" href="logs16.html">Не откалиброванные</a> <br>
                             </div>
                         </div>
                         <div class="catalog__block">
                             <div class="catalog__presentation"><img src="img/products/ladder.svg" alt="presentation"></img></div>
                             <div class="catalog__subtitle ladder"><span>Лестницы</span></div>
                             <div class="catalog__links">
-                                <a href="logs17.html">Из слэба</a> 
-                                <a href="logs18.html">Из массива</a>
+                                <a class="catalog__link" href="logs17.html">Из слэба</a> 
+                                <a class="catalog__link" href="logs18.html">Из массива</a>
                             </div>
                         </div>
                         <div class="catalog__block">
                             <div class="catalog__presentation"><img src="img/products/doors.svg" alt="presentation"></img></div>
                             <div class="catalog__subtitle doors"><span>Двери</span></div>
                             <div class="catalog__links">
-                                <a href="logs19.html">Из массива на выбор</a>
+                                <a class="catalog__link" href="logs19.html">Из массива на выбор</a>
                             </div>
                         </div>
                         <div class="catalog__block">
@@ -262,7 +262,10 @@
                     </div>
                 </div>
             </div>
-    </section>
+</section>
+
+
+
 
 
 <section id="Delivery"  class="content fade ">
@@ -317,7 +320,7 @@
         </div>
         <button class="basket__price">К товарам</button>
     </div>
-    <div class="wrapper">
+    <div class="wrapper hide">
         <div class="name">
             <div class="name__title">
                 <div class="name__product">Товары</div>
@@ -344,6 +347,25 @@
                 <button class="result__btn">Оформить</button>
             </div>
     </div>
+
+<form class="form">
+    <div class="form__wrapper">
+            <div class="form__title">Оформление заявки</div>
+            <input name="name" required placeholder="Имя" type="text">
+            <input name="name" required placeholder="Фамилия" type="text">
+            <input name="email" required placeholder="Email" type="email">
+            <input name="phone" required placeholder="Телефон">
+        <div class="form__subtitle">Доставка: </div>
+            <input   required placeholder="Город:" type="text">
+            <input   required placeholder="Адрес:" type="text">
+            <input   required placeholder="Индекс:" type="number">
+        <label class="form__checkbox">
+            <input   required type="checkbox"> <span>Согласие на обработку персональных данных</span>
+        </label>
+        <button class="form__btn">Отправить</button>
+    </div>
+</form>
+
 </section>
 
 

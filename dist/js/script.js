@@ -3,8 +3,13 @@ window.addEventListener('DOMContentLoaded', function() {
 
     let link = document.querySelectorAll('.promo__link'),
         wrap = document.querySelector('.promo__wrapper'),
-        content = document.querySelectorAll('.content');
+        content = document.querySelectorAll('.content'),
+        productLink = document.querySelectorAll('.catalog__link'),
+        catalogWrap = document.querySelector('.catalog__wrapper'),
+        productLogs = document.querySelectorAll('.logs'),
+        catalog = document.querySelector('.catalog');
 
+        //для перехода по ссылкам на главной странице
         function hideContent(a) {
             for (let i = a; i < content.length; i++) {
                 content[i].classList.remove('show');
@@ -21,6 +26,7 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         }
 
+        
 
         wrap.addEventListener('click', function(event) {
             let targetTab = event.target;
@@ -33,8 +39,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     }
                 }
             }
-        })
-        
+        });
 });
 
 
